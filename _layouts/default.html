@@ -1,0 +1,22 @@
+{% include head.html %}
+<main>
+    {% for post in site.posts %}
+    <article>
+<h1>SOAKING IN COLORS</h1>
+<h2>FEBRUARY 28, 2020 IN SPORTS</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla metus eleifend felis porta sagittis. Nullam at nunc ac enim viverra pharetra. Curabitur tempus molestie est, quis bibendum quam facilisis sit amet. Nunc volutpat diam vitae purus faucibus, consectetur eleifend odio convallis. In ut lectus sapien. Sed lobortis dui non venenatis tempus. Nunc porta eu diam a feugiat. Phasellus volutpat.</p>
+<a href="/" >READ MORE</a>
+    </article>
+{% endfor %}
+
+
+</main>
+    <ul>
+        {% for post in site.posts %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+{% include footer.html %}
